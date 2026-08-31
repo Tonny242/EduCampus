@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_large"
+        android:background="@color/background_main">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRetourCours"
+            style="@style/Widget.EduCampus.Button.Secondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Retour aux cours" />
+
+        <TextView
+            android:id="@+id/tvDetailNom"
+            style="@style/TextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:text="Nom du cours"
+            android:textSize="@dimen/text_size_h2"
+            android:textColor="@color/brand_primary" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            app:cardCornerRadius="@dimen/card_corner_radius"
+            app:cardElevation="@dimen/card_elevation">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_large">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Code du cours"
+                    android:textStyle="bold"
+                    android:textColor="@color/brand_secondary"
+                    android:textSize="@dimen/text_size_small" />
+                <TextView
+                    android:id="@+id/tvDetailCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:textSize="@dimen/text_size_body"
+                    android:textColor="@color/text_primary" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enseignant"
+                    android:textStyle="bold"
+                    android:textColor="@color/brand_secondary"
+                    android:textSize="@dimen/text_size_small" />
+                <TextView
+                    android:id="@+id/tvDetailEnseignant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:textSize="@dimen/text_size_body"
+                    android:textColor="@color/text_primary" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Volume horaire"
+                    android:textStyle="bold"
+                    android:textColor="@color/brand_secondary"
+                    android:textSize="@dimen/text_size_small" />
+                <TextView
+                    android:id="@+id/tvDetailVolumeHoraire"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:textSize="@dimen/text_size_body"
+                    android:textColor="@color/text_primary" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Semestre"
+                    android:textStyle="bold"
+                    android:textColor="@color/brand_secondary"
+                    android:textSize="@dimen/text_size_small" />
+                <TextView
+                    android:id="@+id/tvDetailSemestre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:textSize="@dimen/text_size_body"
+                    android:textColor="@color/text_primary" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Crédit / Coefficient"
+                    android:textStyle="bold"
+                    android:textColor="@color/brand_secondary"
+                    android:textSize="@dimen/text_size_small" />
+                <TextView
+                    android:id="@+id/tvDetailCoefficient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:textSize="@dimen/text_size_body"
+                    android:textColor="@color/text_primary" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textStyle="bold"
+                    android:textColor="@color/brand_secondary"
+                    android:textSize="@dimen/text_size_small" />
+                <TextView
+                    android:id="@+id/tvDetailDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_body"
+                    android:textColor="@color/text_primary" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_large"
+        android:background="@color/background_main">
+
+        <TextView
+            android:id="@+id/tvFormTitle"
+            style="@style/TextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ajouter une Séance"
+            android:textSize="@dimen/text_size_h2"
+            android:layout_marginBottom="@dimen/spacing_large" />
+
+        <TextView
+            style="@style/TextSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cours"
+            android:layout_marginBottom="@dimen/spacing_small" />
+
+        <Spinner
+            android:id="@+id/spinnerCours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_medium"
+            android:padding="@dimen/spacing_small"
+            android:background="@drawable/bg_search_field" />
+
+        <TextView
+            style="@style/TextSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jour"
+            android:layout_marginBottom="@dimen/spacing_small" />
+
+        <Spinner
+            android:id="@+id/spinnerJour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_medium"
+            android:padding="@dimen/spacing_small"
+            android:background="@drawable/bg_search_field" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.EduCampus.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_medium"
+            android:hint="Heure Début (ex: 17h00)">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etHeureDebut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.EduCampus.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_medium"
+            android:hint="Heure Fin (ex: 21h00)">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etHeureFin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.EduCampus.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_medium"
+            android:hint="Salle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etSalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            style="@style/TextSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type de Séance"
+            android:layout_marginBottom="@dimen/spacing_small" />
+
+        <Spinner
+            android:id="@+id/spinnerType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_large"
+            android:padding="@dimen/spacing_small"
+            android:background="@drawable/bg_search_field" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSave"
+            style="@style/Widget.EduCampus.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enregistrer"
+            android:padding="@dimen/spacing_medium" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCancel"
+            style="@style/Widget.EduCampus.Button.Secondary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Annuler"
+            android:layout_marginTop="@dimen/spacing_small" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/spacing_large"
+    android:background="@color/background_main">
+
+    <TextView
+        style="@style/TextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mes absences"
+        android:textSize="@dimen/text_size_h2" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRetourDashboard"
+        style="@style/Widget.EduCampus.Button.Secondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:text="← Retour au Dashboard" />
+
+    <TextView
+        style="@style/TextSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:text="Suivi des absences" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewAbsences"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:clipToPadding="false" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_medium"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardElevation="@dimen/card_elevation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_large">
+
+            <TextView
+                style="@style/TextTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Résumé"
+                android:textSize="@dimen/text_size_h3"
+                android:textColor="@color/brand_primary" />
+
+            <TextView
+                android:id="@+id/tvTotalAbsences"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:text="Nombre total d'absences : —"
+                android:textSize="@dimen/text_size_body"
+                android:textColor="@color/text_primary" />
+
+            <TextView
+                android:id="@+id/tvJustifiees"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:text="Absences justifiées : —"
+                android:textSize="@dimen/text_size_body"
+                android:textColor="@color/status_success" />
+
+            <TextView
+                android:id="@+id/tvNonJustifiees"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:text="Absences non justifiées : —"
+                android:textSize="@dimen/text_size_body"
+                android:textColor="@color/status_error" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

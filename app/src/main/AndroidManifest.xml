@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EduCampus">
+        <activity
+        android:name=".MainActivity"
+        android:exported="false" />
+
+        <activity
+            android:name=".ui.auth.LoginActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ui.auth.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.dashboard.DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.cours.CoursActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.cours.CoursDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.emploi.EmploiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.notes.NotesActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.absences.AbsencesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.annonces.AnnonceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.profil.ProfilActivity"
+            android:exported="false" />
+
+        <!-- Espace Administrateur -->
+        <activity
+            android:name=".ui.admin.AdminDashboardActivity"
+            android:exported="false"
+            android:label="Tableau de bord Administrateur" />
+
+        <activity
+            android:name=".ui.admin.etudiants.AdminEtudiantsActivity"
+            android:exported="false"
+            android:label="Gestion Étudiants" />
+
+        <activity
+            android:name=".ui.admin.etudiants.AdminEtudiantFormActivity"
+            android:exported="false"
+            android:label="Formulaire Étudiant" />
+
+        <activity
+            android:name=".ui.admin.cours.AdminCoursActivity"
+            android:exported="false"
+            android:label="Gestion Cours" />
+
+        <activity
+            android:name=".ui.admin.cours.AdminCoursFormActivity"
+            android:exported="false"
+            android:label="Formulaire Cours" />
+
+        <activity
+            android:name=".ui.admin.enseignants.AdminEnseignantsActivity"
+            android:exported="false"
+            android:label="Gestion Enseignants" />
+
+        <activity
+            android:name=".ui.admin.enseignants.AdminEnseignantFormActivity"
+            android:exported="false"
+            android:label="Formulaire Enseignant" />
+
+        <activity
+            android:name=".ui.admin.emploi.AdminEmploiActivity"
+            android:exported="false"
+            android:label="Gestion Emploi du Temps" />
+
+        <activity
+            android:name=".ui.admin.emploi.AdminEmploiFormActivity"
+            android:exported="false"
+            android:label="Formulaire Emploi du Temps" />
+
+        <activity
+            android:name=".ui.admin.notes.AdminNotesActivity"
+            android:exported="false"
+            android:label="Gestion Notes" />
+
+        <activity
+            android:name=".ui.admin.notes.AdminNoteFormActivity"
+            android:exported="false"
+            android:label="Saisir Note" />
+
+        <activity
+            android:name=".ui.admin.annonces.AdminAnnoncesActivity"
+            android:exported="false"
+            android:label="Gestion Annonces" />
+
+        <activity
+            android:name=".ui.admin.annonces.AdminAnnonceFormActivity"
+            android:exported="false"
+            android:label="Formulaire Annonce" />
+    </application>
+
+</manifest>

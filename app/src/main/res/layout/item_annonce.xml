@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/spacing_small"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    app:cardElevation="@dimen/card_elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_medium">
+
+        <TextView
+            android:id="@+id/tvCategorieAnnonce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Catégorie"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold"
+            android:textColor="@color/brand_secondary" />
+
+        <TextView
+            android:id="@+id/tvTitreAnnonce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xsmall"
+            android:text="Titre de l'annonce"
+            android:textSize="@dimen/text_size_body"
+            android:textStyle="bold"
+            android:textColor="@color/brand_primary" />
+
+        <TextView
+            android:id="@+id/tvContenuAnnonce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:text="Contenu de l'annonce"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="@color/text_primary"
+            android:maxLines="3"
+            android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/tvMetaAnnonce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:text="Date · Auteur"
+            android:textSize="12sp"
+            android:textColor="@color/text_hint" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

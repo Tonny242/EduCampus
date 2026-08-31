@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_large"
+        android:background="@color/background_main">
+
+        <TextView
+            android:id="@+id/tvWelcome"
+            style="@style/TextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bienvenue sur EduCampus"
+            android:textSize="@dimen/text_size_h2" />
+
+        <EditText
+            android:id="@+id/etRecherche"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:padding="@dimen/spacing_medium"
+            android:hint="Rechercher un cours, un enseignant..."
+            android:inputType="text"
+            android:background="@drawable/bg_search_field"
+            android:drawableStart="@android:drawable/ic_menu_search"
+            android:drawablePadding="@dimen/spacing_small"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_hint" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewRecherche"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xsmall"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/TextSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:text="Votre espace étudiant"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCours"
+            style="@style/Widget.EduCampus.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:text="Cours" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEmploi"
+            style="@style/Widget.EduCampus.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:text="Emploi du temps" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNotes"
+            style="@style/Widget.EduCampus.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:text="Notes" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAbsences"
+            style="@style/Widget.EduCampus.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:text="Absences" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAnnonces"
+            style="@style/Widget.EduCampus.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:text="Annonces" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnProfil"
+            style="@style/Widget.EduCampus.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:text="Mon profil" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogout"
+            style="@style/Widget.EduCampus.Button.Secondary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:text="Se déconnecter" />
+
+    </LinearLayout>
+
+</ScrollView>

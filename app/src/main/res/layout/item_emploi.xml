@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/spacing_small"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    app:cardElevation="@dimen/card_elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_medium">
+
+        <TextView
+            android:id="@+id/tvJour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lundi"
+            android:textSize="@dimen/text_size_h3"
+            android:textStyle="bold"
+            android:textColor="@color/brand_primary" />
+
+        <TextView
+            android:id="@+id/tvHoraire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:text="17h00 - 21h00"
+            android:textSize="@dimen/text_size_body"
+            android:textColor="@color/text_primary" />
+
+        <TextView
+            android:id="@+id/tvNomCours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xsmall"
+            android:text="Nom du cours"
+            android:textSize="@dimen/text_size_body"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xsmall"
+            android:text="Salle"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="@color/text_secondary" />
+
+        <TextView
+            android:id="@+id/tvProf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xsmall"
+            android:text="Prof"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="@color/text_secondary" />
+
+        <TextView
+            android:id="@+id/tvType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:text="Type"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold"
+            android:textColor="@color/brand_secondary" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
